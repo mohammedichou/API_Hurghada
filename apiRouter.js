@@ -5,6 +5,7 @@ var destinationController = require('./routes/DestinationController');
 var activityController = require('./routes/ActivityController');
 var chunksContrller = require('./routes/ChunksController')
 var AuthController = require('./routes/AuthController')
+var testController = require('./routes/testController')
 
 
 exports.router = (function () {
@@ -38,6 +39,8 @@ exports.router = (function () {
     apiRouter.route('/Auth/Register').post(AuthController.Register)
     apiRouter.route('/Auth/loggin').post(AuthController.Loggin)
     apiRouter.route('/Auth/tasks').post(AuthController.loginRequired, AuthController.profile)
+
+    apiRouter.route('/test').get(testController.testController)
 
 
     return apiRouter
