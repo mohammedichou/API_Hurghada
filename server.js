@@ -40,4 +40,4 @@ app.use(function(req, res, next) {
 
 app.use('/api/', apiRouter);
 
-app.listen(5500, () => console.log("server lancer sur le port 5500"));
+app.listen(3000, () => console.log("server lancer sur le port 5500"));
