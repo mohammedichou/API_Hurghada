@@ -40,7 +40,7 @@ exports.router = (function () {
     apiRouter.route('/Auth/loggin').post(AuthController.Loggin)
     apiRouter.route('/Auth/tasks').post(AuthController.loginRequired, AuthController.profile)
 
-    apiRouter.route('/test').get(testController.testController)
+    //apiRouter.route('/test').get(testController.testController)
 
 
     return apiRouter
