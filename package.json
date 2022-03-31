@@ -4,8 +4,12 @@
   "description": "api du projet hurghada dream",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
+   "repository": {
+  "type": "git",
+  "url": ""
+},
   "keywords": [
     "api",
     "server",
