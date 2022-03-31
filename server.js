@@ -39,5 +39,6 @@ app.use(function(req, res, next) {
 
 
 app.use('/api/', apiRouter);
+const port = process.env.PORT || 3000
 
-app.listen(3000, () => console.log("server lancer sur le port 5500"));
+app.listen(port, () => console.log("server lancer sur le port " + port));
